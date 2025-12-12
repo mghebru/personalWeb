@@ -28,21 +28,20 @@ function openTab(evt, tabName) {
   });
 
   
-  //*navbarcode for small screens*//
-// const hamburger = document.querySelector(".hamburger");
-// const navmenu = document.querySelector(".nav-links");
+  let cardNumInput = 
+  document.querySelector('#cardNum')
 
-// hamburger.addEventListener("click", () => {
-//   hamburger.classList.toggle("active");
-//   navmenu.classList.toggle("active");
-// })
+cardNumInput.addEventListener('keyup', () => {
+  let cNumber = cardNumInput.value
+  cNumber = cNumber.replace(/\s/g, "")
 
-// document.querySelectorAll(".nav-link").forEach(n => n.addEventListener
-//   ("click", () => {
-//     hamburger.classList.remove("active");
-//     navmenu.classList.remove("active");
-//   })
-// )
+  if (Number(cNumber)) {
+      cNumber = cNumber.match(/.{1,4}/g)
+      cNumber = cNumber.join(" ")
+      cardNumInput.value = cNumber
+  }
+})
+
 
 
 

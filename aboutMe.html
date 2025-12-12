@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async data-id="101473668" src="//static.getclicky.com/js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;
+    1,400;1,700&family=Forum&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Arsenal+SC:ital,
+    wght@0,400;0,700;1,400;1,700&family=Forum&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+    <link rel="" href="functions.js">
+    <link rel="stylesheet" href="design.css">
+</head>
+<body class="aboutMe">
+
+  <header id="homenavbar-container">
+  </header>
+
+  
+
+
+
+
+
+  <div class="contact-container">
+    <h2>Contact Information</h2>
+    <ul class="contact-list">
+      <li><strong>Email:</strong>melatt.g0@gmail.com</li>
+      <li><strong>Phone:</strong> 980-585-6756</li>
+      <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/melatGhebru" target="_blank">linkedin.com/in/melatGhebru</a></li>
+    </ul>
+  </div>
+
+ <!-- JavaScript to include navbar -->
+ <script>
+  // Fetch the navbar HTML and insert it into the header
+  fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById('homenavbar-container').innerHTML = data;
+      })
+      .catch(error => {
+          console.error('Error loading navbar:', error);
+      });
+</script>
+<script src="js/functions.js"></script> 
+</body>
+</html>

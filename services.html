@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async data-id="101473668" src="//static.getclicky.com/js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;
+    1,400;1,700&family=Forum&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Arsenal+SC:ital,
+    wght@0,400;0,700;1,400;1,700&family=Forum&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+    <link rel="" href="functions.js">
+    <link rel="stylesheet" href="design.css">
+</head>
+<body class="serviceMain">
+
+  <header id="homenavbar-container">
+  </header>
+  
+  <div class="services">
+      <div class="services-title">
+      <h2>Services</h2>
+      </div>
+
+    <div class="service-item">
+      <div class="service-icon">
+        <img src="images/webdesign.png" alt="Icon 1">
+      </div>
+      <div class="service-info">
+        <h3>Website Design</h3>
+        <p>Create visually appealing and functional websites tailored to meet your business or personal brand needs. 
+            This includes designing responsive layouts and ensuring the best user experience.</p>
+      </div>
+    </div>
+  
+    <div class="service-item">
+      <div class="service-icon">
+        <img src="images/ux:ui.png" alt="Icon 2">
+      </div>
+      <div class="service-info">
+        <h3>UI/UX Website Redesign</h3>
+        <p>Revamp your website's user interface (UI) and user experience (UX) for better usability and a modern look.
+            Enhancing user interfaces and improving the overall experience on websites.
+        </p>
+      </div>
+    </div>
+  
+    <div class="service-item">
+      <div class="service-icon">
+        <img src="images/business solutions.png" alt="Icon 3">
+      </div>
+      <div class="service-info">
+        <h3>Business Solutions</h3>
+        <p>Provide tailored business solutions through website functionality and integrations to streamline your operations,
+             boost efficiency, and create a seamless customer experience.</p>
+      </div>
+    </div>
+  
+    <div class="service-item">
+      <div class="service-icon">
+        <img src="images/security.png" alt="Icon 4">
+      </div>
+      <div class="service-info">
+        <h3>Web Security & Penetration Testing</h3>
+        <p>Ensure your website is secure by performing penetration testing and identifying vulnerabilities. Implement solutions to 
+            protect your data, customer information, and improve overall web security.</p>
+      </div>
+    </div>
+
+    <div class="service-item">
+        <div class="service-icon">
+          <img src="images/analytics.png" alt="Icon 3">
+        </div>
+        <div class="service-info">
+          <h3>Digital Marketing & Analytics Setup</h3>
+          <p>Assist in setting up digital marketing campaigns and web analytics tools such as Google Analytics, to track and measure website 
+            performance, user behavior, and marketing campaign effectiveness.</p>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <div class="service-icon">
+          <img src="images/logo.png" alt="Icon 3">
+        </div>
+        <div class="service-info">
+          <h3>Logo creation</h3>
+          <p>Create a unique and professional logo that represents your brands identity and makes a lasting impression on your audience. 
+            This includes custom typography and iconography design.</p>
+        </div>
+      </div>
+
+      <div class="service-item">
+        <div class="service-icon">
+          <img src="images/socialMedia.png" alt="Icon 3">
+        </div>
+        <div class="service-info">
+          <h3>Social Media Content Creation</h3>
+          <p>Design eye-catching social media posts and graphics for Facebook, Instagram, LinkedIn, etc., to help your brand engage with followers and increase online presence.</p>
+        </div>
+      </div>
+
+
+      <div class="service-item">
+        <div class="service-icon">
+          <img src="images/videoEdit.png" alt="Icon 3">
+        </div>
+        <div class="service-info">
+          <h3>Video Editing & Post-Production</h3>
+          <p>Edit and enhance video content for marketing, YouTube, social media, or personal projects. Services include cutting, color correction, audio sync, and adding effects.</p>
+        </div>
+      </div>
+
+
+      <div class="service-item">
+        <div class="service-icon">
+          <img src="images/printDesign.png" alt="Icon 3">
+        </div>
+        <div class="service-info">
+          <h3>Print Design (Flyers, Brochures, Posters)</h3>
+          <p>Design high-quality print materials, such as flyers, brochures, and posters, that effectively communicate your message and elevate your branding for events, businesses, or personal use.</p>
+        </div>
+      </div>
+  </div>
+  
+
+
+
+
+
+
+ <!-- JavaScript to include navbar -->
+ <script>
+  // Fetch the navbar HTML and insert it into the header
+  fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById('homenavbar-container').innerHTML = data;
+      })
+      .catch(error => {
+          console.error('Error loading navbar:', error);
+      });
+</script>
+<script src="js/functions.js"></script> 
+</body>
+</html>

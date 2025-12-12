@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melat Ghebru | portfolio</title>
     <script async data-id="101473668" src="//static.getclicky.com/js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,61 +11,76 @@
     1,400;1,700&family=Forum&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Arsenal+SC:ital,
-    wght@0,400;0,700;1,400;1,700&family=Forum&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amita:wght@400;
+700&family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Forum&family=Libre+Caslon+Display&family=Roboto:ital,wght@0,100;
+0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Pixels&display=swap" rel="stylesheet">
     <link rel="" href="functions.js">
     <link rel="stylesheet" href="design.css">
 </head>
 <body>
 
+  <header id="homenavbar-container">
+  </header>
+
   <div class="mainCont">
       <h1>Melat Ghebru</h1>
-      <p>My name is Melat Ghebru, and I recently graduated from the University of North Carolina at Charlotte with a double major in Management Information Systems
-         and a Minor in Software Systems. With a strong foundation in business and technology, I have developed a versatile skill set that includes expertise in
-         Java, JavaScript, HTML, CSS, SQL, Tableau, and Python, along with hands-on experience in web design and development and data analysis. During my time at 
-         UNCC, I gained valuable knowledge through coursework like Data Structures and Algorithms, Human-Centered Design, and Business Applications Development. 
-         I bring strong interpersonal and communication skills to every project I undertake. I am now seeking opportunities in the IT and Project Management fields, 
-         where I can apply my technical expertise, critical thinking abilities, and passion for technology to solve real-world problems. I am particularly excited about 
-         working on projects that integrate technology with business operations to create efficient and impactful solutions. Thank you for taking the time to learn
-          more about me. I look forward to connecting and exploring opportunities to collaborate or contribute to your team.</p>
-        <img src="images/mainIMG.JPG">
+      <p>My name is Melat Ghebru, and I am a graduate from the University of North Carolina at Charlotte with a major in Management Information Systems
+         and a Minor in Software Systems. With a focus on effective integration of technology with business operations to create efficient and impactful solutions, 
+         I have developed a versatile skill set that includes expertise in Java, JavaScript, HTML, CSS, SQL, Tableau, and Python, along with hands-on experience in web design and development and data analysis.  
+         <br>
+         Thank you for taking the time to learn more about me. I look forward to connecting and exploring opportunities to collaborate or contribute to your team.</p>
       </div>
 
   <section id="portfolio">
     <h2>Projects</h2>
-    <p>My name is Melat Ghebru</p>
+    <p>These projects represent a diverse range of digital solutions, each crafted with a focus on functionality, design, and user experience.
+      Whether the goal is to educate, inform, or inspire, the aim is to create engaging, intuitive platforms that connect users with valuable 
+      content and tools. By combining creativity with technical expertise, these projects are designed to provide meaningful, accessible experiences.
+    </p>
     <div class="projects">
 
       <div class="project-card">
-        <img src="project1.jpg" alt="Project 1">
+        <img src="images/proj1.png" alt="Project 1" style="border: 1px solid rgba(0, 0, 0, 0.376);">
         <h3>Project 1</h3>
-        <p>Description of project 1.</p>
+        <p>Developing a website for Moonlight Music School included capturing the essence of its commitment to music education,
+           creativity, and community. The website will serve as the primary online presence for the school, providing information 
+           about classes, instructors, events, and school updates. The goal is to offer an engaging and seamless experience for potential students and parents.</p>
+           <a href="aboutMe.html" class="nav-link">View Site!</a>
       </div>
 
       <div class="project-card">
         <img src="project2.jpg" alt="Project 2">
         <h3>Project 2</h3>
-        <p>Description of project 2.</p>
+        <p>A professional, visually appealing, and functional personal website that showcases personal achievements, 
+          interests, portfolio, and offers an easy way for visitors to get in touch. The website will serve as an online resume and portfolio, 
+          with sections for professional background, personal blog, and contact information.</p>
       </div>
 
       <div class="project-card">
         <img src="project3.jpg" alt="Project 3">
-        <h3>Project 1</h3>
-        <p>Description of project 1.</p>
+        <h3>Coming Soon<img src="images/construction.png" style="width: 10%;"></h3>
+        <p>Designed to teach the Tigrinya language to learners of various levels. A comprehensive learning experience is provided through lessons, 
+          quizzes, vocabulary exercises, and pronunciation guides, with a focus on speaking, reading, and writing in Tigrinya.</p>
       </div>
 
     </div>
   </section>
 
-  <div class="contact-container">
-    <h2>Contact Information</h2>
-    <ul class="contact-list">
-      <li><strong>Email:</strong>melatt.g0@gmail.com</li>
-      <li><strong>Phone:</strong> 980-585-6756</li>
-      <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/melatGhebru" target="_blank">linkedin.com/in/melatGhebru</a></li>
-    </ul>
-  </div>
 </div>
-
+ <!-- JavaScript to include navbar -->
+ <script>
+  // Fetch the navbar HTML and insert it into the header
+  fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById('homenavbar-container').innerHTML = data;
+      })
+      .catch(error => {
+          console.error('Error loading navbar:', error);
+      });
+</script>
+<script src="js/functions.js"></script> 
 </body>
 </html>
